@@ -1,0 +1,22 @@
+.horizontal-separator {
+    height: 1.2vh;
+    border-bottom: 1px solid #dfdfdf;
+}
+
+nav {
+    height: 7.5vh;
+    min-height: 35px;
+    padding: 0vh 15vw;
+}
+
+.navigation-bar {
+    height: inherit;
+    min-height: inherit;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.current-page {
+    color: var(--beige);
+}

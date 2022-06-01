@@ -1,0 +1,72 @@
+footer {
+    position: relative;
+    top: 200px;
+    height: 33vh;
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    gap: 15vw;
+    background-color: var(--beige);
+}
+
+.subscribe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1vh;
+}
+
+.subscribe input {
+    padding: 1vh 2vw;
+    width: 28vw;
+    min-width: 300px;
+    height: 6.5vh;
+    min-height: 30px;
+    border: none;
+    font-family: "Futura LT", Arial, sans-serif;
+    font-size: 100%;
+    color: var(--gray);
+}
+
+.subscribe input::placeholder {
+    color: var(--gray);
+}
+
+.subscribe input:hover, .subscribe input:focus, .subscribe input:active {
+    border: 1px solid #000000;
+    outline: none;
+}
+
+.subscribe button {
+    width: 28vw;
+    min-width: 300px;
+    height: 6.5vh;
+    min-height: 30px;
+    border: none;
+    background-color: #ffffff;
+    font-family: "Futura LT", Arial, sans-serif;
+    font-size: 90%;
+    color: var(--gray);
+}
+
+.subscribe button:hover {
+    cursor: pointer;
+    transition: 0.6s;
+    color: var(--beige);
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 1.5vh;
+    font-size: 90%;
+    color: #ffffff;
+}
+
+.footer-icons {
+    display: flex;
+    gap: 1vw;
+}

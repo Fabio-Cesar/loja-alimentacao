@@ -1,0 +1,157 @@
+
+
+main {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 10.5% 35% 35% 10.5%;
+    grid-template-areas:
+    "parallax1 parallax1 parallax1 parallax1"
+    ". promotions about ."
+    ". shop-now shop-now ."
+    ". customers customers ."
+    "parallax2 parallax2 parallax2 parallax2";
+    gap: 3%;
+}
+
+.parallax-background-1 {
+    height: 98vh;
+    grid-area: parallax1;
+    background-image: url(../images/background-home1.webp);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.about {
+    grid-area: about;
+    display: flex;
+    flex-direction: column;
+    gap: 6vh;
+}
+
+.about-text, .promotions-text {
+    padding: 0vh 1.5vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.index-main-h2, .shop-now-paragraph {
+    font-weight: 600;
+    font-size: 70%;
+    letter-spacing: 0.15vw;
+    color: var(--light-gray);
+}
+
+.index-main-h3, .customer-comment {
+    font-family: 'Libre Baskerville', serif;
+    font-style: italic;
+    font-size: 195%;
+    color: var(--beige);
+}
+
+.index-main-p {
+    line-height: 140%;
+    color: var(--light-gray);
+}
+
+.promotions {
+    grid-area: promotions;
+    display: flex;
+    flex-direction: column;
+    gap: 6vh;
+}
+
+.shop-now {
+    width: 72vw;
+    grid-area: shop-now;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.shop-now img {
+    width: inherit;
+}
+
+.shop-now a {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 180%;
+    color: var(--light-gray);
+}
+
+.shop-now a:hover {
+    color: var(--lighter-gray);
+}
+
+.shop-now-text {
+    width: 30vw;
+    min-width: 180px;
+    height: 20vh;
+    min-height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+    background-color: #ffffff;
+}
+
+.customers {
+    grid-area: customers;
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+}
+
+.slider li:nth-child(1) input {
+    position: absolute;
+    left: 40%;
+    z-index: 1;
+}
+
+.slider li:nth-child(2) input {
+    position: absolute;
+    left: 50%;
+}
+
+.slider li:nth-child(3) input {
+    position: absolute;
+    left: 60%;
+}
+
+.slider .customers-testimonial {
+    display: none;
+}
+
+.slider li input:checked ~ .customers-testimonial {
+    margin-top: 6vh;
+    padding: 0vh 12vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    letter-spacing: 0.08vw;
+    line-height: 220%;
+}
+
+.customer-name {
+    font-size: 80%;
+}
+
+.customer-comment {
+    text-align: center;
+}
+
+.parallax-background-2 {
+    height: 72vh;
+    grid-area: parallax2;
+    background-image: url(../images/background-home2.webp);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,39 @@
+header {
+    height: 20vh;
+    min-height: 100px;
+    padding: 4vh 15vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.restaurant-address {
+    font-size: 90%;
+    color: var(--light-gray);
+    line-height: 120%;
+}
+
+h1 {
+    align-self: flex-end;
+    font-size: 340%;
+    color: var(--beige);
+    letter-spacing: 0.8vw;
+}
+
+h1 a:hover {
+    color: var(--beige);
+}
+
+.header-icons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.2vw;
+}
+
+.login-icon {
+    height: fit-content;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.9vw;
+    font-size: 90%;
+}
